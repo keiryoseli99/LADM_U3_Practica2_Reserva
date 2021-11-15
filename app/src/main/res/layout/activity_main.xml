@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3BFB3"
+    android:orientation="horizontal"
+
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingLeft="15dp"
+            android:text="Reservar Evento"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_weight="0"
+
+            />
+
+
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:rowCount="6"
+            android:background="#B3BFB3"
+            android:padding="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redondo"
+                android:layout_margin="10dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Lugar"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Calle, num interior, colonia, CP."
+                    android:id="@+id/lugar"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redondo"
+                android:layout_margin="10dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hora"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej. 10:30 AM / 14:20 PM"
+                    android:id="@+id/hora"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redondo"
+                android:layout_margin="10dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fecha"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej. 05/11/2021"
+                    android:id="@+id/fecha"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redondo"
+                android:layout_margin="10dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Descripcion"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej. fiesta de cumpleaños"
+                    android:id="@+id/descripcion"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:background="@drawable/redondo"
+                android:layout_margin="10dp"
+                android:layout_columnSpan="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Cliente"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej. Juan López"
+                    android:id="@+id/cliente"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enviar reserva"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/reservar"
+                android:padding="5dp"
+
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Buscar reserva"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/buscar"
+                android:padding="5dp"
+
+
+                />
+
+
+
+
+
+
+
+        </GridLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
